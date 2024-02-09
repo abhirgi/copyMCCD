@@ -7,7 +7,7 @@ $(document).ready(function () {
 
 function setTableData() {
 
-    
+
     // URL of the raw data.json file in the GitHub repository
     //const url = 'https://raw.githubusercontent.com/abhirgi/Census/main/data.json';
     const url = 'https://raw.githubusercontent.com/abhirgi/Census/main/ICD_orgi.json';
@@ -32,8 +32,8 @@ function setTableData() {
                 const row = document.createElement('tr');
                 row.innerHTML = `
         <td>${item['S.No.']}</td>
-        <td>${item['Code']}</td>
         <td>${item['MCCD Description']}</td>
+        <td>${item['Code']}</td>
         
     `;
                 tableBody.appendChild(row);
