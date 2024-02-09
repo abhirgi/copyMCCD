@@ -42,8 +42,8 @@ function setTableData() {
             new DataTable('#myDataTable', {
                 "initComplete": function (settings, json) {
                     $("#myDataTable_filter").parent().siblings()[0].remove();
-                    $("#myDataTable_filter").css({"text-align":"left"});
-                    $("#myDataTable_filter input").css({"width":"100%"});
+                    $("#myDataTable_filter").css({"text-align":"left", "margin-left":"1px"});
+                    $("#myDataTable_filter input").css({"width":"40vw"});
                 },
 
                 "language": {
