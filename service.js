@@ -33,7 +33,7 @@ function setTableData() {
                 row.innerHTML = `
         
         <td>${item['MCCD Description']}</td>
-        <td>${item['Code']}</td>
+        <td>${item['Code'].split(',').join(',<br/>')}</td>
         
     `;
                 tableBody.appendChild(row);
