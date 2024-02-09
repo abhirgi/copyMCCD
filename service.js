@@ -32,8 +32,8 @@ function setTableData() {
                 const row = document.createElement('tr');
                 row.innerHTML = `
         <td>${item['S.No.']}</td>
-        <td>${item['MCCD Code']}</td>
-        <td>${item['Disease']}</td>
+        <td>${item['Code']}</td>
+        <td>${item['MCCD Description']}</td>
         
     `;
                 tableBody.appendChild(row);
