@@ -69,7 +69,8 @@ function setTableData() {
                 "language": {
                     "search": "Search for disease/ cause of death", // Change "Your Custom Label Here" to the text you want to use
                     "lengthMenu": "Show _MENU_ Records" // Customizing the "Show entries" label
-                }
+                },
+                responsive: true,
             });
         })
         .catch(error => {
