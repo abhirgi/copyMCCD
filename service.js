@@ -40,13 +40,18 @@ function setTableData() {
             });
 
             new DataTable('#myDataTable', {
+                "initComplete": function (settings, json) {
+                    $("#myDataTable_filter").parent().siblings()[0].remove();
+                    $("#myDataTable_filter").css({"text-align":"left"});
+                    $("#myDataTable_filter input").css({"width":"100%"});
+                },
+
                 "language": {
                     "search": "Search Keyword :", // Change "Your Custom Label Here" to the text you want to use
                 },
                 responsive: true,
                 "paging": false,
                 "info": false,
-                "dom": '<"d-flex justify-content-start"l><"d-flex justify-content-start"f><"d-flex justify-content-end"t><"d-flex justify-content-start"i><"d-flex justify-content-end"p>'
             });
         })
         .catch(error => {
