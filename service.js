@@ -10803,7 +10803,8 @@ $(document).ready(function () {
   "MCCD Description": "Zygomycosis"
  }
 ];
-    setTableDataFromLocal();
+     setTimeout(setTisetTableDataFromLocal(), 0);
+  
 
 });
 
