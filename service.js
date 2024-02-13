@@ -1,9 +1,40 @@
 // service.js
 $(document).ready(function () {
-    setTableData();
+    setTableDataFromLocal();
 
 });
 
+
+function setTableDataFromLocal() {
+    // Import the JSON data as a module
+    import jsonData from './ICD_orgi.json';
+
+    // Work with the JSON data
+    const tableBody = document.getElementById('tableBody');
+
+    jsonData.forEach(item => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td>${item['MCCD Description']}</td>
+            <td>${item['Code'].split(',').join(',<br/>')}</td>
+        `;
+        tableBody.appendChild(row);
+    });
+
+    new DataTable('#myDataTable', {
+        "initComplete": function (settings, json) {
+            $("#myDataTable_filter").parent().siblings()[0].remove();
+            $("#myDataTable_filter").css({"text-align":"left", "margin-left":"1px"});
+            $("#myDataTable_filter input").css({"width":"40vw"});
+        },
+        "language": {
+            "search": "Search Keyword :", // Change "Your Custom Label Here" to the text you want to use
+        },
+        responsive: true,
+        "paging": false,
+        "info": false,
+    });
+}
 
 function setTableData() {
 
