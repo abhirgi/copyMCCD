@@ -1,3 +1,4 @@
+import jsonData from './ICD_orgi.json';
 // service.js
 $(document).ready(function () {
     setTableDataFromLocal();
@@ -6,8 +7,7 @@ $(document).ready(function () {
 
 
 function setTableDataFromLocal() {
-    // Import the JSON data as a module
-    import jsonData from './ICD_orgi.json';
+
 
     // Work with the JSON data
     const tableBody = document.getElementById('tableBody');
