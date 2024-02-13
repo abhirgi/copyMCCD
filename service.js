@@ -10803,7 +10803,7 @@
 // service.js
 $(document).ready(function () {
     
-     setTimeout(function(){setTableDataFromLocal()}, 0);
+     setTableDataFromLocal();
   
 
 });
