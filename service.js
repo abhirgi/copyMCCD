@@ -10,7 +10,7 @@ function setTableData() {
 
     // URL of the raw data.json file in the GitHub repository
     //const url = 'https://raw.githubusercontent.com/abhirgi/Census/main/data.json';
-    const url = 'https://raw.githubusercontent.com/abhirgi/Census/main/ICD_orgi.json';
+    const url = 'https://raw.githubusercontent.com/abhirgi/copyMCCD/main/ICD_orgi.json';
 
     // Fetching the data.json file
     fetch(url)
