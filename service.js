@@ -1,4 +1,4 @@
-import jsonData from './ICD_orgi.json';
+import jsonData from './jsonGet.js';
 // service.js
 $(document).ready(function () {
     setTableDataFromLocal();
