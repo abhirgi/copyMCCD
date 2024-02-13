@@ -1,7 +1,4 @@
-
-// service.js
-$(document).ready(function () {
-     var jsonData=[
+ const jsonData=[
  {
   "S.No.": 1,
   "Code": "R10",
@@ -10803,6 +10800,9 @@ $(document).ready(function () {
   "MCCD Description": "Zygomycosis"
  }
 ];
+// service.js
+$(document).ready(function () {
+    
      setTimeout(function(){setTableDataFromLocal()}, 0);
   
 
