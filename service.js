@@ -1,7 +1,7 @@
 
 // service.js
 $(document).ready(function () {
-     let jsonData=[
+     var jsonData=[
  {
   "S.No.": 1,
   "Code": "R10",
